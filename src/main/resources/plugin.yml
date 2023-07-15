@@ -1,0 +1,5 @@
+name: FiveLives
+version: '${project.version}'
+main: de.luludodo.fivelives.FiveLives
+api-version: '1.20'
+authors: [agent_LuluDodo]
