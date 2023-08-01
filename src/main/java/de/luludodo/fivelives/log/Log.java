@@ -9,6 +9,10 @@ public class Log {
         Log.log = log;
     }
 
+    public static void debug(String msg) {
+        Log.warn("[DEBUG] " + msg);
+    }
+
     public static void info(String msg) {
         log.info(msg);
     }

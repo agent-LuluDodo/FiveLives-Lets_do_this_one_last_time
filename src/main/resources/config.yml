@@ -1,0 +1,33 @@
+maxLives: 5
+reviveLives: 3
+fragmentRecipe:
+  shaped: true
+  shape:
+  - gdn
+  - dtd
+  - ndg
+  g: "minecraft:gold_ingot"
+  d: "minecraft:diamond"
+  n: "minecraft:netherite_scrap"
+  t: "minecraft:totem_of_undying"
+lifeRecipe:
+  shaped: true
+  shape:
+  - cfg
+  - dnd
+  - gfc
+  c: "minecraft:copper_block"
+  f: "five-lives:fragment"
+  g: "minecraft:gold_block"
+  d: "minecraft:diamond"
+  n: "minecraft:netherite_ingot"
+beaconRecipe:
+  shaped: true
+  shape:
+  - gld
+  - lnl
+  - dlg
+  g: "minecraft:gold_ingot"
+  d: "minecraft:diamond"
+  l: "five-lives:life"
+  n: "minecraft:netherite_ingot"

@@ -3,3 +3,14 @@ version: '${project.version}'
 main: de.luludodo.fivelives.FiveLives
 api-version: '1.20'
 authors: [agent_LuluDodo]
+commands:
+  life:
+    description: Command for managing lives (Admin only)
+    usage: /<command> <action> <[args...]>
+    permission: minecraft.op
+  recipe:
+    description: Shows a recipe from this plugin
+    usage: /<command> <recipe>
+  withdraw:
+    description: Transforms lives into items
+    usage: /<command> <amount>

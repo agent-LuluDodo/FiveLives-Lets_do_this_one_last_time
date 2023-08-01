@@ -1,0 +1,295 @@
+language: de
+translations:
+  en-us:
+    language: English
+    api:
+      success: The action was a success!
+      moreThanMaxLives: This action would set the players lives over the maximum!
+      lessThan0Lives: This action would set the players lives under 0 Lives!
+      playerUnknown: This player is unknown!
+      playerNotAllowed: This player is not allowed for this api!
+    ban:
+      kick: |-
+        &4&nYou have run out of Lives!&r
+        
+        &7Reason:&r %reason%&r
+        &7Date:&r %date%&r
+        
+        &cYou need to be revived if you want
+        to join this server!
+        &7Use a beacon of revival
+        to revive a player.
+      leave: "%Player% has lost all of their lives!"
+      reason:
+        setTo0: Your lives were set to 0!
+        death: "You died! %death-msg%"
+        killed: "You were killed! %death-msg%"
+    cmd:
+      life:
+        get:
+          success: "%Name% has %lives% Lives!"
+        add:
+          success: "%Name%'s Lives were increased by %lives%!"
+        remove:
+          success: "%Name%'s Lives were reduced by %lives%!"
+        set:
+          success: "%Name%'s Lives were set to %lives%!"
+        ban:
+          error: This Player is already banned!
+          success: "%Name% was banned!"
+        move:
+          success: "%Lives% Lives were moved from %from% to %to%!"
+        revive:
+          error: This Player isn't banned!
+          success: "%Name% was revived!"
+        item:
+          error: "%Id% isn't a valid item!"
+          success: "%Id% was given to you %amount% times!"
+        language:
+          error: "Couldn't find language '%lang%'!"
+          success: "Set language to %lang%!"
+        reload:
+          error: "Couldn't reload %file%!"
+          success: "Reloaded %file%!"
+        save:
+          error: "Couldn't save %file%!"
+          success: "Saved %file%!"
+        reset:
+          success: "Reset %file%!"
+      recipe:
+        error: There is no recipe with id %id%!
+      update:
+        error: Couldn't find any item to update!
+        success: "Updated %id% %amount% times!"
+      withdraw:
+        success: "You transformed %amount% lives into items!"
+      error:
+        tooManyArgs: You entered too many Arguments!
+        tooLittleArgs: You didn't enter enough Arguments!
+        notANumber: You didn't enter a number!
+        tooBigNumber: You entered a too large number!
+        tooSmallNumber: You entered a too small number!
+        notAPlayer: You need to be a player to use this command!
+        notAOption: You didn't enter an option!
+      send:
+        success: "&a%msg%"
+        successOutOf: "Successful: (%success%/%results%)"
+        error: "&c%msg%"
+        argError: "&cError with Argument %arg%&6: &c%msg%"
+        internalError: "&cInternal Error&6: &c%msg%"
+    date: "%month%/%day%/%year% %hour%:%minute%"
+    gui:
+      recipe:
+        title: "&bRecipe: &3%item%"
+        item:
+          life: live
+          fragment: fragment
+          beacon: revive
+      revive:
+        areYouSure:
+          title: "&bAre you sure?"
+          cancel: "&cNo"
+          confirm: "&aYes"
+        nextPage:
+          name: "&bNext Page"
+          lore: |-
+            
+            &aTakes you to page %page%!
+        previousPage:
+          name: "&bPrevious Page"
+          lore: |-
+            
+            &aTakes you to page %page%!
+        noBannedPlayer:
+          name: "&bThere are no banned Players!"
+          lore: |-
+            
+            &aPlayers with 0 lives can be 
+            revived with %revive-lives% in this menu!
+        title: "&bRevive one player:"
+        unban: "You revived %player%!"
+    item:
+      fragment:
+        name: "&r&7[&c 1 ♥ Fragment &7]"
+        lore: |-
+          
+          &r&aUse a &6Crafting Table&a
+          &r&ato craft a life.
+      life:
+        name: "&r&7[&c Restore 1 ❤ Life &7]"
+        lore: |-
+          
+          &r&aUse &6right click&a,
+          &r&ato restore a life.
+          
+          &r&c&oYou can only do this,
+          &r&c&owhile having less than %max_lives% lives.
+      beacon:
+        name: "&r&7[&b Revive 1 Player &7]"
+        lore: |-
+          
+          &r&aUse this &6Item&a,
+          &r&ato revive a Player.
+          
+          &r&c&oPlayers get revived
+          &r&c&owith %revive_lives% Lives.
+    prefix:
+      format: "&7(&c%lives%&7)"
+      life: ❤
+    reload: |-
+      &2&nReload!
+      
+      &r&aReconnect to this Server
+      to continue playing!
+    use:
+      life:
+        error: "You cannot have more lives than %max-lives%!"
+        success: "You have gained a life!"
+  de:
+    language: Deutsch
+    api:
+      success: Dieser Aktion war ein Erfolg!
+      moreThanMaxLives: Dieser Aktion würde die Anzahl der Leben des Spielers über das Maximum setzen!
+      lessThan0Lives: Dieser Aktion würde die Anzahl der Leben des Spielers unter 0 setzen!
+      playerUnknown: Dieser Spieler ist unbekannt!
+      playerNotAllowed: Dieser Spieler ist nicht erlaubt für diese Api!
+    ban:
+      kick: |-
+        &4&nDu hast keine Leben mehr übrig!&r
+        
+        &7Grund:&r %reason%&r
+        &7Datum:&r %date%&r
+        
+        &cUm wieder joinen zu können musst
+        du wiederbelebt werden!
+        &7Nutze einen Beacon der Wiederbelebung
+        um einen Spieler wiederzubeleben.
+      leave: "%Player% hat alle Leben verloren!"
+      reason:
+        setTo0: Deine Leben wurden auf 0 gesetzt!
+        death: "Du bist gestorben! %death-msg%"
+        killed: "Du wurdest ermordet! %death-msg%"
+    cmd:
+      life:
+        get:
+          success: "%Name% hat %lives% Leben!"
+        add:
+          success: "%Name%'s Leben wurden um %lives% erhöht!"
+        remove:
+          success: "%Name%'s Leben wurden um %lives% erniedrigt!"
+        set:
+          success: "%Name%'s Leben wurden auf %lives% gesetzt!"
+        ban:
+          error: Dieser Spieler ist schon gebannt!
+          success: "%Name% wurde gebannt!"
+        move:
+          success: "%Lives% Leben von %from% zu %to% bewegt!"
+        revive:
+          error: Dieser Spieler ist nicht gebannt!
+          success: "%Name% wurde wiederbelebt!"
+        item:
+          error: "%Id% ist kein valides Item!"
+          success: "%Id% wurde dir %amount%-mal gegeben!"
+        language:
+          error: "Konnte '%lang%' nicht finden!"
+          success: "Sprache zu %lang% gesetzt!"
+        reload:
+          error: "Konnte %file% nicht erneut laden!"
+          error2: "Konnte %file% nicht finden!"
+          success: "%File% erneut geladen!"
+        save:
+          error: "Konnte %file% nicht speichern!"
+          error2: "Konnte %file% nicht finden!"
+          success: "%File% gespeichert!"
+        reset:
+          error: "Konnte %file% nicht finden!"
+          success: "%File% zurückgesetzt!"
+      recipe:
+        error: "Kein Rezept für %id% gefunden!"
+      update:
+        error: Keine Items zum erneuern gefunden!
+        success: "%Id% wurde %amount%-mal erneuert!"
+      withdraw:
+        success: Du hast %lives% Leben in Items verwandelt!
+      error:
+        tooManyArgs: Du hast zu viele Argumente angegeben!
+        tooLittleArgs: Du hast zu wenige Argumente angegeben!
+        notANumber: Du hast keine Zahl angegeben!
+        tooBigNumber: Du hast eine zu große Zahl angegeben!
+        tooSmallNumber: Du hast eine zu kleine Zahl angegeben!
+        notAPlayer: Du musst ein Spieler sein um diesen Command zu nutzen!
+        notAOption: Du hast keine der Optionen angegeben!
+      send:
+        success: "&a%msg%"
+        successOutOf: "Erfolgreich: (%successes%/%results%)"
+        error: "&c%msg%"
+        argError: "&cProblem bei Argument %arg%&6: &c%msg%"
+        internalError: "&cInterner Fehler&6: &c%msg%"
+    date: "%day%.%month%.%year% %hour%:%minute%"
+    gui:
+      recipe:
+        title: "&bRezept: &3%item%"
+        item:
+          life: Leben
+          fragment: Fragment
+          beacon: Wiederbelebung
+      revive:
+        areYouSure:
+          title: "&bBist du dir sicher?"
+          cancel: "&cNein"
+          confirm: "&aJa"
+        nextPage:
+          name: "&bNächste Seite"
+          lore: |-
+            
+            &aBringt dich zu Seite %page%!
+        previousPage:
+          name: "&bVorherige Seite"
+          lore: |-
+            
+            &aBringt dich zu Seite %page%!
+        noBannedPlayer:
+          name: "&bEs gibt keinen gebannten Spieler!"
+          lore: |-
+            
+            &aSpieler mit 0 Leben können hier
+            mit %revive-lives% Leben wiederbelebt werden!
+        title: "&bWiederbelebe einen Spieler:"
+        unban: "Du hast %player% wiederbelebt!"
+    item:
+      fragment:
+        name: "&r&7[&c 1 ♥ Fragment &7]"
+        lore: |-
+          
+          &aNutze eine &6Werkbank&a um
+          ein Leben zu craften.
+      life:
+        name: "&r&7[&c 1 ❤ Leben wiederherstellen &7]"
+        lore: |-
+          
+          &aNutze &6Rechtskick&a, um
+          ein Leben wiederherzustellen.
+          
+          &c&oNur möglich, wenn du
+          weniger als %max_lives% Leben hast.
+      beacon:
+        name: "&r&7[&b 1 Spieler wiederbeleben &7]"
+        lore: |-
+          
+          &aNutze dieses &6Item&a, um
+          einen Spieler wiederzubeleben.
+          
+          &c&oSpieler werden mit
+          %revive_lives% Leben wiederbelebt.
+    prefix:
+      format: "&7(&c%lives%&7) "
+      life: ❤
+    reload: |-
+      &2&nNeu laden!
+      
+      &r&aVerbinde dich erneut mit 
+      diesen Server, um weiter zu spielen!
+    use:
+      life:
+        error: "Du kannst nicht mehr als %max-lives% Leben haben!"
+        success: "Du hast ein Leben dazugewonnen!"
